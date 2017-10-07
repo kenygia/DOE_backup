@@ -1,0 +1,204 @@
+@font-face
+{
+font-family: 'Alagard';
+src: url('../font/alagard_by_pix3m-d6awiwp.woff') format('woff'),
+     url('../font/alagard_by_pix3m-d6awiwp.ttf')  format('truetype');
+}
+
+body
+{
+  background-color: lightgrey;
+  cursor: url(../img/ui/cursorSword_silver.png),auto;
+  font-family: 'Alagard';
+}
+
+.form
+{
+  background-color: #838796;
+  border: 10px solid transparent;
+  border-radius: 4px;
+  border-image-source: url(../img/ui/panel_blue.png);
+  border-image-repeat: round;
+  border-image-slice: 30;
+  border-image-width: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 10px;
+  height: auto;
+  width: auto;
+}
+
+.in
+{
+  border: 2px solid;
+  border-radius: 4px;
+  border-color: rgb(76, 125, 86);
+}
+
+.in:hover
+{
+  border: 2px solid;
+  border-radius: 4px;
+  border-color: rgb(45, 76, 117);
+  box-shadow: 0 0 8px rgba(0, 79, 255, 0.20);
+  cursor: url(../img/ui/cursorGauntlet_grey.png),auto;
+}
+.sub
+{
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  cursor: url(../img/ui/cursorGauntlet_grey.png),auto;
+}
+
+#sub_title
+{
+  vertical-align: top;
+  background-color: grey;
+  cursor: url(../img/ui/cursorHand_grey.png),auto;
+  font-size: 20px;
+  align-items: center;
+}
+
+#sub_body
+{
+  background-color: transparent;
+  padding: 10%;
+}
+
+.in:focus
+{
+  border: 2px solid;
+  border-radius: 3px;
+  outline: 0;
+  border-color: rgb(45, 117, 60);
+  box-shadow: 0 0 8px rgba(0, 79, 255, 0.60);
+}
+
+.in-sub
+{
+  border-color: rgb(76, 125, 86);
+}
+
+.in-sub:hover
+{
+  border-color: rgb(45, 117, 60);
+  background-color: lightgreen;
+}
+
+.in-sub:focus
+{
+  background-color: rgb(145, 230, 200);
+}
+
+.in-err
+{
+  border-color: rgb(125, 76, 76);
+}
+
+.in-err:hover
+{
+  border-color: red;
+  background-color: rgb(117, 45, 45);
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.2);
+}
+
+.in-err:focus
+{
+  background-color: rgb(230, 145, 145);
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.in-err:invalid
+{
+  border-color: red;
+  background-color: rgb(117, 45, 45);
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.2);
+}
+.rc-sub
+{
+ border-radius: 4px;
+ margin: 5px;
+}
+
+.rc-rad-sub:checked+.rc-txt-sub
+{
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: lightgreen;
+}
+
+#btn
+{
+  border-image-slice: 33% 33% 33% 33% fill;
+  border-image-width: 1.5em 1.5em 1.5em 1.5em;
+  border-image-repeat: round round;
+  border-image-source: url(../img/ui/buttonSquare_brown.png);
+}
+
+#btn:hover
+{
+  border-image-slice: 33% 33% 33% 33% fill;
+  border-image-width: 1.5em 1.5em 1.5em 1.5em;
+  border-image-repeat: round round;
+  border-image-source: url(../img/ui/buttonSquare_brown_pressed.png);
+}
+
+.btn
+{
+  border: none;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+}
+
+.btn:hover
+{
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: url(../img/ui/cursorHand_grey.png),auto;
+}
+
+.btn-sub {
+  padding: 5px;
+}
+
+.btn-sub:hover {
+  border: 3px solid darkred;
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin: auto;
+  border: 2px solid darkgreen;
+  background-color: lightgreen;
+  border-radius: 2px;
+}
+
+.nav-item {
+  padding: 4px;
+
+}
+
+.nav-link {
+  text-decoration: none;
+  cursor: url(../img/ui/cursorHand_grey.png),auto;
+  color: rgb(39, 9 ,9);
+
+}
+
+.nav-link:hover {
+  text-decoration: overline underline;
+}
